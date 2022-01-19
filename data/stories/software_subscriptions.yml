@@ -1,0 +1,14 @@
+stories:
+  - story: Order MS Office
+    steps:
+      - intent: Subscription_MS_Office
+        user: I'd like to have microsoft word
+        entities: []
+      - action: utter_subscription_microsoft
+      - intent: Thanks
+        user: Thanks! That was helpful
+        entities: []
+      - action: utter_chitchat_anything_else
+    metadata:
+      group: Software Subscriptions
+rules: []

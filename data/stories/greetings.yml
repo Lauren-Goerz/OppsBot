@@ -1,0 +1,22 @@
+stories:
+  - story: Goodbye
+    steps:
+      - intent: Farewell
+        user: Goodbye
+        entities: []
+      - action: utter_chitchat_farewell
+    metadata:
+      group: Greetings
+  - story: How are you?
+    steps:
+      - intent: Greeting
+        user: HI
+        entities: []
+      - action: utter_chitchat_greeting
+      - intent: Wellbeing
+        user: 'Im doing well, how are you?'
+        entities: []
+      - action: utter_chitchat_wellbeing
+    metadata:
+      group: Greetings
+rules: []

@@ -1,0 +1,104 @@
+actions:
+  - action_botfront_disambiguation
+  - action_botfront_disambiguation_followup
+  - action_botfront_fallback
+  - action_botfront_mapping
+  - utter_chitchat_anything_else
+  - utter_chitchat_farewell
+  - utter_chitchat_greeting
+  - utter_chitchat_wellbeing
+  - utter_get_started
+  - utter_subscription_microsoft
+entities: []
+forms: {}
+intents:
+  - Farewell
+  - Greeting
+  - Subscription_MS_Office
+  - Thanks
+  - Wellbeing
+  - get_started
+responses:
+  utter_chitchat_anything_else:
+    - language: en
+      text: "Happy to help anytime \U0001F604 Is there anything else I can help you with?"
+  utter_chitchat_farewell:
+    - language: en
+      metadata:
+        forceClose: true
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: "Thanks for chatting with me, bye for now \U0001F44B"
+    - language: en
+      metadata:
+        forceClose: true
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: 'Have a great rest of your day! Goodbye! '
+  utter_chitchat_greeting:
+    - language: en
+      metadata: null
+      text: 'Hello, and welcome to the Rasa Opps Slackbot. How can I help you today?'
+  utter_chitchat_wellbeing:
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: >-
+        I'm doing splendidly. It's a beautiful day to be in a docker container.
+        My colleagues and I might go whale watching later today. What can I help
+        you with today?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: 'I can''t complain today. I am happy to AI assist you. '
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: 'I meta bot yesterday on the internet, we had a nice chat. '
+  utter_get_started:
+    - language: en
+      metadata: null
+      text: 'Hello, and welcome to the Rasa Opps Slackbot. How can I help you today?'
+  utter_subscription_microsoft:
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: >-
+        In order to get a subscription to Microsoft Office, you can set up an
+        individual subscription using a Spendesk card for 8.77 USD/7€ per month.
+        You will need to us a <a
+        href="https://helpcenter.spendesk.com/en/articles/4200510-use-recurring-payments-cards">Recurring
+        Payments Card</a>to set up payment for the subscription. 
+session_config: {}
+slots:
+  disambiguation_message:
+    type: unfeaturized
+  fallback_language:
+    initial_value: en
+    type: unfeaturized

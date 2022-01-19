@@ -1,0 +1,131 @@
+version: "2.0"
+nlu:
+- intent: Farewell
+  metadata:
+    language: en
+  examples:
+  - text: |
+      Goodbye
+    metadata:
+      canonical: true
+  - text: |
+      au revoir
+  - text: |
+      aufwiedersehen
+  - text: |
+      buhbye
+  - text: |
+      bye
+  - text: |
+      bye bye
+  - text: |
+      byyyyeee
+  - text: |
+      peace out
+  - text: |
+      seeya
+  - text: |
+      so long
+- intent: Greeting
+  metadata:
+    language: en
+  examples:
+  - text: |
+      'sup
+  - text: |
+      HI
+    metadata:
+      canonical: true
+  - text: |
+      Hello
+  - text: |
+      hallo
+  - text: |
+      hey bay bay
+  - text: |
+      hey bot
+  - text: |
+      hey there
+  - text: |
+      hija
+  - text: |
+      how you doin'
+  - text: |
+      na?
+  - text: |
+      servus
+  - text: |
+      wassup
+  - text: |
+      yo
+- intent: Subscription_MS_Office
+  metadata:
+    language: en
+  examples:
+  - text: |
+      How do I get .ppt
+  - text: |
+      How do I get MS office on my computer?
+  - text: |
+      How do I get mircrosoft powerpoint?
+  - text: |
+      How do I order an Office subscription?
+  - text: |
+      I need ms word
+  - text: |
+      I want ppt and excel
+  - text: |
+      I want to be able to open .ppt docs
+  - text: |
+      I want to get MS Word on my comp
+  - text: |
+      I want to have excel
+  - text: |
+      I want to have powerpoint
+  - text: |
+      I'd like to have microsoft word
+  - text: |
+      I'd like to subscribe to MS office
+    metadata:
+      canonical: true
+  - text: |
+      MS word subscription
+  - text: |
+      how do I get excel
+  - text: |
+      ppt on my computer
+- intent: Thanks
+  metadata:
+    language: en
+  examples:
+  - text: |
+      Thanks! That was helpful
+  - text: |
+      Thanks! that was helpful
+    metadata:
+      canonical: true
+- intent: Wellbeing
+  metadata:
+    language: en
+  examples: |
+    - You alright?
+    - how are you
+    - how are you feeling?
+    - how are you?
+    - how is your day going?
+    - hows it going?
+    - howya been?
+    - what have you been up to?
+    - whats cookin' good lookin'
+- synonym: powerpoint
+  examples: |
+    - .ppt\npwrpnt\nPowerPoint\nPPt\nslidemaker\nmsppt
+- synonym: word
+  examples: |
+    - word\nmsword\nWord
+- synonym: excel
+  examples: |
+    - excel\nxls\n.xls\nmsexcel
+- synonym: microsoft office
+  examples: |
+    - ms office

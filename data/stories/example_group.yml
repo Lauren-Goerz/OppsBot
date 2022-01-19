@@ -1,0 +1,10 @@
+stories: []
+rules:
+  - rule: Get started
+    condition: []
+    steps:
+      - intent: get_started
+      - action: utter_get_started
+    conversation_start: true
+    metadata:
+      group: Example group
