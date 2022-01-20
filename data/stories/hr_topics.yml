@@ -9,6 +9,7 @@ stories:
         user: Thanks! That was helpful
         entities: []
       - action: utter_chitchat_anything_else
+      - action: utter_sxELM6X_n
     metadata:
-      group: Software Subscriptions
+      group: HR Topics
 rules: []

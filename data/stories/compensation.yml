@@ -1,0 +1,13 @@
+stories:
+  - story: Compensation Philosophy
+    steps:
+      - intent: Compensation_Philosophy
+        user: Whats the compensation philosophy at Rasa?
+        entities: []
+      - action: utter_compensation_philosophy
+      - action: utter_follow_up
+      - intent: Thanks
+        entities: []
+    metadata:
+      group: Compensation
+rules: []

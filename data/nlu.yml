@@ -1,5 +1,43 @@
 version: "2.0"
 nlu:
+- intent: Access_Zoom
+  metadata:
+    language: en
+  examples:
+  - text: |
+      I want access to zoom
+    metadata:
+      canonical: true
+  - text: |
+      I want zoom
+  - text: |
+      Paid zoom account
+  - text: |
+      Premium zoom
+- intent: Compensation_Philosophy
+  metadata:
+    language: en
+  examples:
+  - text: |
+      Compensation philosophy
+  - text: |
+      I don't understand the compensation process
+  - text: |
+      Whats the compensation philosophy at Rasa?
+    metadata:
+      canonical: true
+  - text: |
+      Why do certain people get higher salaries than me?
+  - text: |
+      how does rasa decide my salary?
+  - text: |
+      is compensation equitable at rasa?
+  - text: |
+      payment philosophy
+  - text: |
+      why are european salaries lower?
+  - text: |
+      why do americans get paid more?
 - intent: Farewell
   metadata:
     language: en

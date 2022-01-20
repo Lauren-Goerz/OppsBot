@@ -7,11 +7,17 @@ actions:
   - utter_chitchat_farewell
   - utter_chitchat_greeting
   - utter_chitchat_wellbeing
+  - utter_compensation_philosophy
+  - utter_follow_up
   - utter_get_started
   - utter_subscription_microsoft
+  - utter_sxELM6X_n
+  - utter_vAbOd7OuH
 entities: []
 forms: {}
 intents:
+  - Access_Zoom
+  - Compensation_Philosophy
   - Farewell
   - Greeting
   - Subscription_MS_Office
@@ -21,6 +27,7 @@ intents:
 responses:
   utter_chitchat_anything_else:
     - language: en
+      metadata: null
       text: "Happy to help anytime \U0001F604 Is there anything else I can help you with?"
   utter_chitchat_farewell:
     - language: en
@@ -76,6 +83,50 @@ responses:
         pageEventCallbacks: null
         userInput: show
       text: 'I meta bot yesterday on the internet, we had a nice chat. '
+  utter_compensation_philosophy:
+    - language: en
+      text: >-
+        Here is some more information about our Rasa Compensation Philosophy:
+        https://www.notion.so/rasa/Compensation-Philosophy-308a115b8163483fa9e865eb390d5b5d
+  utter_follow_up:
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: Is there anything else I can help you with?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: How else can I help you today?
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: >-
+        Let me know if there is anything else I can help you with, I'm here for
+        you 24/7. 
+    - language: en
+      metadata:
+        forceClose: false
+        forceOpen: false
+        linkTarget: _blank
+        pageChangeCallbacks: null
+        pageEventCallbacks: null
+        userInput: show
+      text: 'Let me know If I can help you with anything else. '
   utter_get_started:
     - language: en
       metadata: null
@@ -95,6 +146,12 @@ responses:
         You will need to us a <a
         href="https://helpcenter.spendesk.com/en/articles/4200510-use-recurring-payments-cards">Recurring
         Payments Card</a>to set up payment for the subscription. 
+  utter_sxELM6X_n:
+    - language: en
+      text: Is there anything else I can help you with?
+  utter_vAbOd7OuH:
+    - language: en
+      text: 'You can get your paid zoom account here: link'
 session_config: {}
 slots:
   disambiguation_message:

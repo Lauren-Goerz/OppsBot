@@ -1,0 +1,10 @@
+stories:
+  - story: AccessZoom
+    steps:
+      - intent: Access_Zoom
+        user: I want access to zoom
+        entities: []
+      - action: utter_vAbOd7OuH
+    metadata:
+      group: Access
+rules: []
